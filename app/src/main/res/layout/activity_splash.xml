@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3D7FBC"
-    tools:context=".Splash">
+    tools:context="com.jrubio.zombie_tap.Splash">
 
     <LinearLayout
         android:layout_width="match_parent"

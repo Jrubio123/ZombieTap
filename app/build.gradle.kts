@@ -5,14 +5,14 @@ plugins {
 }
 
 android {
-    namespace = "com.example.zombie_tap"
+    namespace = "com.jrubio.zombietap"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.zombie_tap"
+        applicationId = "com.jrubio.zombietap"
         minSdk = 24
         targetSdk = 33
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

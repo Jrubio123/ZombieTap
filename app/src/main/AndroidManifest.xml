@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jrubio.zombietap">
+
 
     <application
         android:allowBackup="true"
@@ -13,22 +15,22 @@
         android:theme="@style/Theme.Zombie_Tap"
         tools:targetApi="31">
         <activity
-            android:name=".ui.theme.Puntajes"
+            android:name="com.jrubio.zombie_tap.ui.theme.Puntajes"
             android:exported="false" />
         <activity
-            android:name=".ui.theme.escenarioJuego"
+            android:name="com.jrubio.zombie_tap.ui.theme.escenarioJuego"
             android:exported="false" />
         <activity
-            android:name=".ui.theme.Login"
+            android:name="com.jrubio.zombie_tap.ui.theme.Login"
             android:exported="false" />
         <activity
-            android:name=".ui.theme.Menu"
+            android:name="com.jrubio.zombie_tap.ui.theme.Menu"
             android:exported="false" />
         <activity
-            android:name=".ui.theme.Registro"
+            android:name="com.jrubio.zombie_tap.ui.theme.Registro"
             android:exported="false" />
         <activity
-            android:name=".Splash"
+            android:name="com.jrubio.zombie_tap.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.jrubio.zombie_tap.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

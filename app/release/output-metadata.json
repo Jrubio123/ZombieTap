@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.zombie_tap",
+  "applicationId": "com.jrubio.zombietap",
   "variantName": "release",
   "elements": [
     {
