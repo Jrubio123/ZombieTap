@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.theme.escenarioJuego">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--Informacion-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/anchoTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anchoTv"
+                    android:layout_marginStart="15dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/altoTv"
+                    android:layout_marginStart="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/aplastados"
+                android:layout_width="80dp"
+                android:text="@string/altoTv"
+
+                android:layout_height="80dp">
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/tvContador"
+                android:text="@string/tvContador"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tvNombre"
+                android:text="@string/tvNombre"
+                android:textColor="@color/white"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <!--ANIMACIÓN-->
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_fileName="tiempo.json"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"/>
+
+            <TextView
+                android:id="@+id/tvTiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/tvTiempo"
+                android:textColor="@color/white">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <!--zombie-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imZombie"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/zombie">
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "959714516336",
+    "project_id": "zombies-tap",
+    "storage_bucket": "zombies-tap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959714516336:android:90b86f147e6055d2cc43b5",
+        "android_client_info": {
+          "package_name": "com.example.zombie_tap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdZmVNvMp_H3MuUFr6RYQg3XEjl3PApqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

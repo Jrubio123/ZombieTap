@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Zombie_Tap</string>
+    <string name="title_activity_splash">Splash</string>
+
+
+    <string name="BTNLOGIN">LOGIN</string>
+    <string name="BTNREGISTRO">REGISTARSE</string>
+
+
+    <string name="nombreEt">Nombre</string>
+    <string name="correoEt">Correo</string>
+    <string name="passwordEt">Contraseña</string>
+    <string name="fechaTxt">Fecha</string>
+
+    <string name="correoLogin">Ingrese Correo</string>
+    <string name="passwordLogin">Ingrese Password</string>
+    <string name="buttonLogin">Ingresar</string>
+
+
+    <string name="miPuntuacionTxt">Mi Puntuacion</string>
+    <string name="zombies">--</string>
+    <string name="uid">--</string>
+    <string name="correo">--</string>
+    <string name="nombre">--</string>
+    <string name="fecha">--</string>
+
+    <string name="menuTxt">Menu</string>
+
+    <string name="cerrarSesion">Cerrar Sesion</string>
+    <string name="puntuaciones">Puntuaciones</string>
+    <string name="acercaBtn">Acerca de</string>
+    <string name="jugatBtn">JUGAR</string>
+
+    <string name="tvContador">0</string>
+    <string name="tvNombre">--</string>
+    <string name="tvTiempo">0</string>
+    <string name="altoTv">--</string>
+    <string name="anchoTv">--</string>
+
+    <string name="seAcaboTxt">Se Acabo el Tiempo</string>
+    <string name="hasMatadoTxt">Has Matado</string>
+    <string name="numeroTxt">--</string>
+    <string name="jugarDeNuevo">Jugar De Nuevo</string>
+    <string name="irMenu">MENU</string>
+    <string name="puntajes">Ver Puntajes</string>
+
+
+</resources>

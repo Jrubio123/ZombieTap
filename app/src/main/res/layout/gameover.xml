@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/seAcaboTxt"
+        android:layout_width="wrap_content"
+        android:text="@string/seAcaboTxt"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/hasMatadoTxt"
+        android:layout_width="wrap_content"
+        android:text="@string/hasMatadoTxt"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/numeroTxt"
+        android:layout_width="wrap_content"
+        android:text="@string/numeroTxt"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="wrap_content">
+    </TextView>
+
+            <!--ANIMACIÓN-->
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_fileName="finjuego.json"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true">
+            </com.airbnb.lottie.LottieAnimationView>
+
+    <Button
+        android:id="@+id/jugarDeNuevo"
+        android:layout_width="match_parent"
+        android:text="@string/jugarDeNuevo"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:id="@+id/puntajes"
+        android:layout_width="match_parent"
+        android:text="@string/puntajes"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+    </Button>
+    <Button
+        android:id="@+id/irMenu"
+        android:layout_width="match_parent"
+        android:text="@string/irMenu"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+    </Button>
+
+
+
+</LinearLayout>
