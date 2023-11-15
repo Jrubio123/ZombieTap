@@ -225,6 +225,8 @@ public class escenarioJuego extends AppCompatActivity {
 
     }
 
+
+
     //metodo para actualizar puntaje
     private  void guardarResultados(String key, int zombies){//key zombies (el documento en la abse y zombies numero
 

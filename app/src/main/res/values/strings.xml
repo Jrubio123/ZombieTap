@@ -37,8 +37,8 @@
     <string name="puntuaciones">Puntuaciones</string>
     <string name="acercaBtn">Acerca de</string>
     <string name="jugatBtn">JUGAR</string>
-    <string name="editarBtn">Acerca de</string>
-    <string name="cambiarBtn">JUGAR</string>
+    <string name="editarBtn">Editar Perfil</string>
+    <string name="cambiarBtn">Cambiar Pass</string>
 
     <string name="tvContador">0</string>
     <string name="tvNombre">--</string>
@@ -52,6 +52,12 @@
     <string name="jugarDeNuevo">Jugar De Nuevo</string>
     <string name="irMenu">MENU</string>
     <string name="puntajes">Ver Puntajes</string>
+
+    <string name="nombreJugador">Nombre</string>
+    <string name="paisJugador">Pais</string>
+    <string name="puntajeJugador">Puntaje</string>
+    <string name="edadJugador">Edad</string>
+
 
 
 </resources>

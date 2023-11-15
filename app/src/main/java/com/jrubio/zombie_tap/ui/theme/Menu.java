@@ -83,11 +83,15 @@ public class Menu extends AppCompatActivity {
         nombre.setTypeface(Tf);
         menuTxt.setTypeface(Tf);
         fecha.setTypeface(Tf);
+        edad.setTypeface(Tf);
+        pais.setTypeface(Tf);
 
         cerrarSesion.setTypeface(Tf);
         jugarBtn.setTypeface(Tf);
         puntuaciones.setTypeface(Tf);
         acercaBtn.setTypeface(Tf);
+        cambiarBtn.setTypeface(Tf);
+        editarBtn.setTypeface(Tf);
 
         //boton jugar
         jugarBtn.setOnClickListener(new View.OnClickListener() {
@@ -146,7 +150,7 @@ public class Menu extends AppCompatActivity {
         editarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Toast.makeText(Menu.this, "editar informacion", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -155,6 +159,7 @@ public class Menu extends AppCompatActivity {
         cambiarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(Menu.this, "Cambiar Contrasena", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -221,9 +226,6 @@ public class Menu extends AppCompatActivity {
                         Picasso.get().load(R.drawable.soldado).into(imagenPerfil);
 
                     }
-
-
-
                 }
 
 
