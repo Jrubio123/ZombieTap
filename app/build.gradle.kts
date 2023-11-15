@@ -71,6 +71,8 @@ dependencies {
     implementation ("com.google.firebase:firebase-auth:22.2.0")           /*AUTENTICACIÓN*/
     implementation ("com.google.firebase:firebase-database:20.3.0")  /*BASE DATOS*/
     implementation ("com.airbnb.android:lottie:3.0.1") //animacion
+    implementation ("com.squareup.picasso:picasso:2.71828") /*GESTIONAR IMAGEN*/
+    implementation ("de.hdodenhof:circleimageview:3.0.1")   /*IMAGEN CIRCULAR*/
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.03.00"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")

@@ -21,6 +21,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Menu extends AppCompatActivity {
 
@@ -30,13 +33,16 @@ public class Menu extends AppCompatActivity {
     DatabaseReference Jugadores;
 
 
-    TextView miPuntuacionTxt,zombies,uid,correo,nombre,menuTxt,fecha;
-    Button cerrarSesion,jugarBtn,puntuaciones,acercaBtn;
+    TextView miPuntuacionTxt,zombies,uid,correo,nombre,menuTxt,fecha,edad,pais;
+    Button cerrarSesion,jugarBtn,puntuaciones,acercaBtn,cambiarBtn,editarBtn;
+    CircleImageView imagenPerfil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        imagenPerfil = findViewById(R.id.imagenPerfil);
 
         miPuntuacionTxt = findViewById(R.id.miPuntuacionTxt);
         zombies = findViewById(R.id.zombies);
@@ -45,6 +51,8 @@ public class Menu extends AppCompatActivity {
         nombre = findViewById(R.id.nombre);
         menuTxt = findViewById(R.id.menuTxt);
         fecha = findViewById(R.id.fecha);
+        edad = findViewById(R.id.edad);
+        pais = findViewById(R.id.pais);
 
 
         auth=FirebaseAuth.getInstance();
@@ -65,6 +73,8 @@ public class Menu extends AppCompatActivity {
         jugarBtn=findViewById(R.id.jugatBtn);
         puntuaciones=findViewById(R.id.puntuaciones);
         acercaBtn=findViewById(R.id.acercaBtn);
+        cambiarBtn=findViewById(R.id.cambiarBtn);
+        editarBtn=findViewById(R.id.editarBtn);
 
         miPuntuacionTxt.setTypeface(Tf);
         zombies.setTypeface(Tf);
@@ -132,6 +142,23 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        //boton editar informacion
+        editarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+        //boton cambiar contrasena
+        cambiarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
 
     }
     //se ejecuta cuando se abre el juegazo
@@ -172,6 +199,9 @@ public class Menu extends AppCompatActivity {
                     String emailString= ""+ds.child("Correo").getValue();
                     String nombreString= ""+ds.child("Nombre").getValue();
                     String fechaString= ""+ds.child("Fecha").getValue();
+                    String edadString= ""+ds.child("Edad").getValue();
+                    String paisString= ""+ds.child("Pais").getValue();
+                    String imagen= ""+ds.child("Imagen").getValue();
 
 
                     //datos en las vistas
@@ -180,6 +210,18 @@ public class Menu extends AppCompatActivity {
                     correo.setText(emailString);
                     nombre.setText(nombreString);
                     fecha.setText(fechaString);
+                    edad.setText(edadString);
+                    pais.setText(paisString);
+
+                    try{
+                        Picasso.get().load(imagen).into(imagenPerfil);
+
+                    }catch (Exception e){
+
+                        Picasso.get().load(R.drawable.soldado).into(imagenPerfil);
+
+                    }
+
 
 
                 }

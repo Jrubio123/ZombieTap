@@ -30,7 +30,7 @@ import java.util.HashMap;
 public class Registro extends AppCompatActivity {
 
     //variables
-    EditText nombreEt,correoEt,passwordEt;
+    EditText nombreEt,correoEt,passwordEt,edadEt,paisEt;
     TextView fechaTxt;
     Button Registrar;
     FirebaseAuth auth; //firebase autenticacion
@@ -47,6 +47,8 @@ public class Registro extends AppCompatActivity {
         passwordEt=findViewById(R.id.passwordEt);
         Registrar=findViewById(R.id.Registrar);
         fechaTxt=findViewById(R.id.fechaTxt);
+        edadEt=findViewById(R.id.edadEt);
+        paisEt=findViewById(R.id.paisEt);
 
         auth=FirebaseAuth.getInstance();
 
@@ -103,15 +105,21 @@ public class Registro extends AppCompatActivity {
                             String correoString=correoEt.getText().toString();
                             String passString= passwordEt.getText().toString();
                             String fechaString= fechaTxt.getText().toString();
+                            String paisString= paisEt.getText().toString();
+                            String edadString= edadEt.getText().toString();
 
                             HashMap<Object,Object> datosJugador =new HashMap<>();
 
                             datosJugador.put("Uid",uidString);
                             datosJugador.put("Nombre",nombreString);
                             datosJugador.put("Correo",correoString );
+                            datosJugador.put("Edad",edadString);
+                            datosJugador.put("Pais",paisString );
                             datosJugador.put("Password",passString);
                             datosJugador.put("Fecha",fechaString);
                             datosJugador.put("Zombies",contador);
+                            datosJugador.put("Imagen","");
+
 
                             FirebaseDatabase database = FirebaseDatabase.getInstance();
                             DatabaseReference reference = database.getReference("Database Jugadores");/*Referencia al nombre de la base de datos*/

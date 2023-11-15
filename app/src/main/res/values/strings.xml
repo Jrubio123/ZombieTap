@@ -11,6 +11,9 @@
     <string name="correoEt">Correo</string>
     <string name="passwordEt">Contraseña</string>
     <string name="fechaTxt">Fecha</string>
+    <string name="edadEt">Edad</string>
+    <string name="paisEt">Pais</string>
+
 
     <string name="correoLogin">Ingrese Correo</string>
     <string name="passwordLogin">Ingrese Password</string>
@@ -23,6 +26,10 @@
     <string name="correo">--</string>
     <string name="nombre">--</string>
     <string name="fecha">--</string>
+    <string name="edad">--</string>
+    <string name="pais">--</string>
+    <string name="miPerfilTxt">Mi perfil</string>
+
 
     <string name="menuTxt">Menu</string>
 
@@ -30,6 +37,8 @@
     <string name="puntuaciones">Puntuaciones</string>
     <string name="acercaBtn">Acerca de</string>
     <string name="jugatBtn">JUGAR</string>
+    <string name="editarBtn">Acerca de</string>
+    <string name="cambiarBtn">JUGAR</string>
 
     <string name="tvContador">0</string>
     <string name="tvNombre">--</string>
